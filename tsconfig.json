@@ -10,6 +10,11 @@
     // Компилятор будет обрабатывать ts и js файлы
     "allowJs": true,
     "moduleResolution": "node",
+    // для абсолютного импорта
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    },
     // esModuleInterop позволяет работать с пакетами, которые используют common js
     // как с обычными пакетами с помощью import (require() module.export) = common js
     "esModuleInterop": true,
