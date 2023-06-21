@@ -1,5 +1,9 @@
 {
   "Добро пожаловать в Реакт": "Welcome to React",
   "Перевод": "Translate",
-  "Язык": "English"
+  "Язык": "English",
+  "page not found": "Page not found",
+  "Refresh the page": "Refresh the page",
+  "unexpected error": "An unexpected error has occurred",
+  "throw error": "throw error"
 }
