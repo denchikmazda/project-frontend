@@ -44,8 +44,9 @@ module.exports = {
         'react/function-component-definition': 'off',
         'no-shadow': 'off',
         'import/extensions': 'off',
-        'import/no-extraneous-dependencies': 'warn',
+        'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
         'no-underscore-dangle': 'off',
+        'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
         'i18next/no-literal-string': [
             'error',
             {
