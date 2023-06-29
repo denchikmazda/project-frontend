@@ -1,15 +1,12 @@
 {
-  "Refresh the page": "Refresh the page",
-  "Toggle": "Toggle",
+  "Glavnaya stranica": "Glavnaya stranica",
+  "O saite": "O saite",
+  "Refresh the page": "Обновить страницу",
   "glavnaya": "glavnaya",
-  "hello world": "hello world",
-  "o sayte": "o sayte",
+  "language": "language",
   "o-saite": "o-saite",
-  "page not found": "page not found",
-  "throw error": "throw error",
-  "unexpected error": "unexpected error",
-  "Главная": "Главная",
-  "Главная страница": "Главная страница",
-  "О сайте": "О сайте",
-  "Язык": "Язык"
+  "page not found": "Страница не найдена",
+  "short language": "short language",
+  "throw error": "бросить ошибку",
+  "unexpected error": "Произошла непредвиденная ошибка"
 }

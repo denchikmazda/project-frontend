@@ -1,15 +1,12 @@
 {
+  "Glavnaya stranica": "Glavnaya stranica",
+  "O saite": "O saite",
   "Refresh the page": "Refresh the page",
-  "Toggle": "Toggle",
   "glavnaya": "glavnaya",
-  "hello world": "hello world",
-  "o sayte": "o sayte",
+  "language": "language",
   "o-saite": "o-saite",
-  "page not found": "page not found",
+  "page not found": "Page not found",
+  "short language": "short language",
   "throw error": "throw error",
-  "unexpected error": "unexpected error",
-  "Главная": "Главная",
-  "Главная страница": "Главная страница",
-  "О сайте": "О сайте",
-  "Язык": "Язык"
+  "unexpected error": "An unexpected error has occurred"
 }
