@@ -56,7 +56,7 @@ module.exports = {
         ],
         'max-len': [
             'error',
-            { ignoreComments: true, code: 90, ignorePattern: '^import .*' },
+            { ignoreComments: true, code: 100, ignorePattern: '^import .*' },
         ],
 
     },
