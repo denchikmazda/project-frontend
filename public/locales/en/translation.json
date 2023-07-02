@@ -7,5 +7,7 @@
   "o-saite": "About us",
   "language": "English",
   "short language": "En",
-  "Voity": "Login"
+  "Voity": "Login",
+  "increment": "Increment",
+  "decrement": "Decrement"
 }
