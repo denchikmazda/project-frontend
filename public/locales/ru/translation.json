@@ -9,5 +9,8 @@
   "short language": "Ru",
   "Voity": "Войти",
   "increment": "Увеличить",
-  "decrement": "Уменьшить"
+  "decrement": "Уменьшить",
+  "voity": "Войти",
+  "Vvedite login": "Введите логин",
+  "Vvedite parol": "Введите пароль"
 }

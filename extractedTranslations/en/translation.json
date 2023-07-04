@@ -8,6 +8,8 @@
   "O saite": "O saite",
   "Refresh the page": "Refresh the page",
   "Voity": "Voity",
+  "Vvedite login": "Vvedite login",
+  "Vvedite parol": "Vvedite parol",
   "decrement": "decrement",
   "glavnaya": "glavnaya",
   "increment": "increment",
@@ -17,6 +19,9 @@
   "short language": "short language",
   "throw error": "throw error",
   "unexpected error": "An unexpected error has occurred",
+  "voity": "",
+  "Введите логин": "Введите логин",
+  "Введите пароль": "Введите пароль",
   "Главная": "Главная",
   "О сайте": "О сайте"
 }

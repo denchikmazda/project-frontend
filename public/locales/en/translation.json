@@ -9,5 +9,8 @@
   "short language": "En",
   "Voity": "Login",
   "increment": "Increment",
-  "decrement": "Decrement"
+  "decrement": "Decrement",
+  "voity": "Login",
+  "Vvedite login": "Input username",
+  "Vvedite parol": "Input password"
 }
