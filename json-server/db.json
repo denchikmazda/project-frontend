@@ -26,7 +26,16 @@
         "password": "123"
       }
     ],
-    "profile": { "name": "typicode" }
+    "profile": { 
+      "first": "Danila",
+      "last": "Efimov",
+      "age": "22",
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Kazan",
+      "username": "admin",
+      "avatar": "https://cdn.vectorstock.com/i/preview-1x/68/97/programmer-computer-expert-rgb-color-icon-vector-37206897.jpg"
+     }
 }
 
 
