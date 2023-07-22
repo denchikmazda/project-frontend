@@ -2,5 +2,15 @@
   "Profil": "Профиль",
   "Redaktirovat": "Редактировать",
   "Vashe imya": "Ваше имя",
-  "Vasha familiya": "Ваша фамилия"
+  "Vasha familiya": "Ваша фамилия",
+  "Oshibka pri zagruzke profilya": "Произошла ошибка при загрузке профиля",
+  "Poprobuite obnovit stranicu": "Попробуйте обновить страницу",
+  "Otmenit": "Отменить",
+  "Sohranit": "Сохранить",
+  "Vash vozrast": "Ваш возраст",
+  "Gorod": "Город",
+  "Enter the username": "Введите имя пользователя",
+  "Enter the link to the avatar": "Введите ссылку на аватар",
+  "Ukazhite valytu": "Укажите валюту",
+  "Ukazhite stranu": "Укажите страну"
 }

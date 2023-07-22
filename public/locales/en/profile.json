@@ -2,6 +2,15 @@
   "Profil": "Profile",
   "Redaktirovat": "Edit",
   "Vashe imya": "Your name",
-  "Vasha familiya": "Your surname"
-
+  "Vasha familiya": "Your surname",
+  "Oshibka pri zagruzke profilya": "An error occurred while loading the profile",
+  "Poprobuite obnovit stranicu": "Try refreshing the page",
+  "Otmenit": "Cancel",
+  "Sohranit": "Save",
+  "Vash vozrast": "Your age",
+  "Gorod": "City",
+  "Enter the username": "Enter the username",
+  "Enter the link to the avatar": "Enter the link to the avatar",
+  "Ukazhite valytu": "Choose a currency",
+  "Ukazhite stranu": "Choose a country"
 }

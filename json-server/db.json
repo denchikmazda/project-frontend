@@ -1,41 +1,38 @@
-
 {
-    "posts": [
-      {
-        "id": "1",
-        "title": "json-server",
-        "userId": "1"
-      },
-      {
-        "id": "2",
-        "title": "json-server",
-        "userId": "2"
-      }
-    ],
-    "comments": [
-      {
-        "id": "1",
-        "body": "some comment",
-        "postId": "1"
-      }
-    ],
-    "users": [
-      {
-        "id": "1",
-        "username": "admin",
-        "password": "123"
-      }
-    ],
-    "profile": { 
-      "first": "Danila",
-      "last": "Efimov",
-      "age": "22",
-      "currency": "RUB",
-      "country": "Russia",
-      "city": "Kazan",
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "title": "json-server",
+      "userId": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
       "username": "admin",
-      "avatar": "https://cdn.vectorstock.com/i/preview-1x/68/97/programmer-computer-expert-rgb-color-icon-vector-37206897.jpg"
-     }
+      "password": "123"
+    }
+  ],
+  "profile": {
+    "first": "Danila",
+    "last": "Efimov",
+    "age": 22,
+    "currency": "USD",
+    "country": "Kazakhstan",
+    "city": "Kazan",
+    "username": "admin",
+    "avatar": "https://cdn.vectorstock.com/i/preview-1x/68/97/programmer-computer-expert-rgb-color-icon-vector-37206897.jpg"
+  }
 }
-
-
