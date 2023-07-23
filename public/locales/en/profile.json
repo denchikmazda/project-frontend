@@ -12,5 +12,10 @@
   "Enter the username": "Enter the username",
   "Enter the link to the avatar": "Enter the link to the avatar",
   "Ukazhite valytu": "Choose a currency",
-  "Ukazhite stranu": "Choose a country"
+  "Ukazhite stranu": "Choose a country",
+  "First and last name are required": "First and last name are required",
+  "Incorrect age": "Incorrect age",
+  "Invalid region": "Invalid region",
+  "Data is not specified": "Data is not specified",
+  "Server error when saving": "Server error when saving"
 }
