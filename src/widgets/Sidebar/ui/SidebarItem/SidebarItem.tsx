@@ -19,7 +19,6 @@ export const SidebarItem = memo(({ item, collapsed }: SidebarItemProps) => {
     if (item.authOnly && !isAuth) {
         return null;
     }
-
     return (
         <AppLink
             theme={AppLinkTheme.SECONDARY}
