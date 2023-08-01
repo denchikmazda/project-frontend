@@ -39,3 +39,12 @@ NoAuth.decorators = [
         user: {},
     }),
 ];
+
+export const Orange = Template.bind({});
+Orange.args = {};
+Orange.decorators = [
+    ThemeDecorator(Theme.ORANGE),
+    StoreDecorator({
+        user: { authData: {} },
+    }),
+];
