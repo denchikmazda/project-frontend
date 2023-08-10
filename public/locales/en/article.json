@@ -2,5 +2,8 @@
   "ARTICLES PAGE": "Articles page",
   "Error article": "An error occurred while loading the article",
   "Statya ne naidena": "Article not found",
-  "Kommentarii": "Comments"
+  "Kommentarii": "Comments",
+  "Vvedite tekst kommentariya": "Enter the comment text",
+  "Otpravit": "Send",
+  "Kommentarii otsutsvuyt": "There are no comments"
 }
