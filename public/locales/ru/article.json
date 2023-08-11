@@ -1,9 +1,10 @@
 {
-  "ARTICLES PAGE": "Статьи",
   "Error article": "Произошла ошибка при загрузке статьи",
   "Statya ne naidena": "Статья не найдена",
   "Kommentarii": "Комментарии",
   "Vvedite tekst kommentariya": "Введите текст комментария",
   "Otpravit": "Отправить",
-  "Kommentarii otsutsvuyt": "Комментарии отсутствуют"
+  "Kommentarii otsutsvuyt": "Комментарии отсутствуют",
+  "Read more": "Читать далее...",
+  "Nazad k spisku": "Назад к списку"
 }

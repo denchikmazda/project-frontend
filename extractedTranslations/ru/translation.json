@@ -19,6 +19,7 @@
       " Repellat illum deleniti explicabo molestiae quae!": " Repellat illum deleniti explicabo molestiae quae!"
     }
   },
+  "Nazad k spisku": "Nazad k spisku",
   "O saite": "O saite",
   "Oshibka pri zagruzke profilya": "Oshibka pri zagruzke profilya",
   "Otmenit": "Otmenit",
@@ -26,6 +27,13 @@
   "Poprobuite obnovit stranicu": "Poprobuite obnovit stranicu",
   "Profil": "Profil",
   "Profile page": "Profile page",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Redaktirovat": "Redaktirovat",
   "Refresh the page": "Обновить страницу",
   "Server error when saving": "Server error when saving",
