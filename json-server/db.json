@@ -477,7 +477,8 @@
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
-        "ECONOMICS"
+        "ECONOMICS",
+        "IT"
       ],
       "blocks": [
         {
@@ -553,6 +554,12 @@
       "userId": "1",
       "text": "Paxagir c# privet",
       "id": "NW8gQ4i"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "12345",
+      "id": "gjwq0X0"
     }
   ],
   "users": [
