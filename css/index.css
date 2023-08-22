@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,10 @@ textarea,
 select {
   margin: 0;
   font: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 :root {
@@ -39,6 +44,10 @@ select {
   --secondary-color: rgb(4 88 255);
   --inverted-primary-color: rgb(61 240 16);
   --inverted-secondary-color: rgb(5 138 34);
+  --skeleton-shadow: rgba(0 0 0 / 20%);
+  --skeleton-color: #fff;
+  --code-bg: #fff;
+  --card-bg: #d5d5d7;
 }
 
 .app_dark_theme {
@@ -48,6 +57,23 @@ select {
   --secondary-color: rgb(5 138 34);
   --inverted-primary-color: rgb(4 23 170);
   --inverted-secondary-color: rgb(0 102 255);
+  --skeleton-shadow: #2b2be8;
+  --skeleton-color: #1515ad;
+  --code-bg: #1212a1;
+  --card-bg: #0d0d6b;
+}
+
+.app_orange_theme {
+  --bg-color: #faf4fb;
+  --inverted-bg-color: #bd5012;
+  --primary-color: #9a1a0e;
+  --secondary-color: #d01f0e;
+  --inverted-primary-color: #dbd5dc;
+  --inverted-secondary-color: #faf4fb;
+  --skeleton-shadow: rgba(0 0 0 / 20%);
+  --skeleton-color: #fff;
+  --code-bg: #fff;
+  --card-bg: #d5d5d7;
 }
 
 .app,
@@ -65,7 +91,17 @@ select {
   display: flex;
 }
 
-.page-wrapper {
-  flex-grow: 1;
-  padding: 20px;
+*::-webkit-scrollbar {
+  width: 8px; /* ширина scrollbar */
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--card-bg); /* цвет зоны отслеживания */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--inverted-primary-color); /* цвет бегунка */
+  border-radius: 20px; /* округлось бегунка */
+  border: 2px solid var(--primary-color); /* отступ вокруг бегунка */
 }

@@ -5,4 +5,8 @@
   --secondary-color: rgb(5 138 34);
   --inverted-primary-color: rgb(4 23 170);
   --inverted-secondary-color: rgb(0 102 255);
+  --skeleton-shadow: #2b2be8;
+  --skeleton-color: #1515ad;
+  --code-bg: #1212a1;
+  --card-bg: #0d0d6b;
 }
