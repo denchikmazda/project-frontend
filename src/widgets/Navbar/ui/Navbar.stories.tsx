@@ -26,5 +26,5 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
 export const AuthNavbar = Template.bind({});
 AuthNavbar.args = {};
 AuthNavbar.decorators = [StoreDecorator({
-    user: { authData: {} },
+    user: { authData: { avatar: 'https://cdn.vectorstock.com/i/preview-1x/68/97/programmer-computer-expert-rgb-color-icon-vector-37206897.jpg' } },
 })];
