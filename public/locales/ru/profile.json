@@ -17,5 +17,6 @@
   "Incorrect age": "Некорректный возраст",
   "Invalid region": "Некорректный регион",
   "Data is not specified": "Данные не указаны",
-  "Server error when saving": "Серверная ошибка при сохранении"
+  "Server error when saving": "Серверная ошибка при сохранении",
+  "profile not found": "Профиль не найден"
 }

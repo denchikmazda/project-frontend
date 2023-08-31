@@ -17,8 +17,8 @@ describe('fetchNextArticlesPage.test', () => {
         });
         await thunk.callThunk();
 
-        // eslint-disable-next-line no-unused-expressions
-        expect(fetchArticlesList).resolves;
+        expect(thunk.dispatch).toBeCalledTimes(4);
+        expect(fetchArticlesList).toHaveBeenCalled();
     });
 
     test('fetchArticleList not called', async () => {

@@ -17,5 +17,6 @@
   "Incorrect age": "Incorrect age",
   "Invalid region": "Invalid region",
   "Data is not specified": "Data is not specified",
-  "Server error when saving": "Server error when saving"
+  "Server error when saving": "Server error when saving",
+  "profile not found": "Profile not found"
 }
