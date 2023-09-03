@@ -23,6 +23,7 @@ import { Theme } from '../../src/app/providers/ThemeProvider';
 import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator';
+import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator';
 import i18n from './i18n';
 
 export const parameters = {
@@ -51,3 +52,4 @@ export const parameters = {
 addDecorator(StyleDecorator);
 addDecorator(RouterDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
+addDecorator(SuspenseDecorator);
