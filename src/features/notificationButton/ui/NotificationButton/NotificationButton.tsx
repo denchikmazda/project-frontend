@@ -8,6 +8,7 @@ import { Popover } from 'shared/ui/popups';
 import { Drawer } from 'shared/ui/Drawer/Drawer';
 // import { BrowserView, MobileView } from 'react-device-detect';
 import { useDevice } from 'shared/lib/hooks/useDevice/useDevice';
+import { AnimationProvider } from 'shared/lib/components/AnimationProvider';
 import cls from './NotificationButton.module.scss';
 
 interface NotificationButtonProps {
@@ -46,9 +47,11 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
         : (
             <>
                 {trigger}
-                <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
-                    <NotificationList />
-                </Drawer>
+                <AnimationProvider>
+                    <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
+                        <NotificationList />
+                    </Drawer>
+                </AnimationProvider>
             </>
         );
     // решение с использование библиотеки device detect
