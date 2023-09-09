@@ -15,16 +15,10 @@ export default ({ config }: {config: webpack.Configuration}) => {
 
     config!.resolve!.modules!.unshift(paths.src);
     config!.resolve!.extensions!.push('.ts', '.tsx');
-    config.resolve!.alias = { ...config!.resolve!.alias, '@': paths.src };
-    // config!.resolve!.alias = {
-    //     ...config!.resolve!.alias,
-    //     '@/shared': path.resolve(__dirname, '..', '..', 'src', 'shared'),
-    //     '@/entities': path.resolve(__dirname, '..', '..', 'src', 'entities'),
-    //     '@/features': path.resolve(__dirname, '..', '..', 'src', 'features'),
-    //     '@/widgets': path.resolve(__dirname, '..', '..', 'src', 'widgets'),
-    //     '@/pages': path.resolve(__dirname, '..', '..', 'src', 'pages'),
-    //     '@/app': path.resolve(__dirname, '..', '..', 'src', 'app'),
-    // };
+    config!.resolve!.alias = {
+        ...config!.resolve!.alias,
+        '@': paths.src,
+    };
 
     if (config.module?.rules) {
         const rules = config.module!.rules as RuleSetRule[];
