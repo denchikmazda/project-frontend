@@ -79,7 +79,8 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
-        'denchik-fsd/path-checker': 'error',
+        'denchik-fsd/path-checker': ['error', { alias: '@' }],
+        'denchik-fsd/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,
