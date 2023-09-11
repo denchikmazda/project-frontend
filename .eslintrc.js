@@ -80,11 +80,18 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'denchik-fsd/path-checker': ['error', { alias: '@' }],
+        'denchik-fsd/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'denchik-fsd/public-api-imports': [
             'error',
             {
                 alias: '@',
-                testFilesPetterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx'],
+                testFilesPatterns: ['**/*.test.*', '**/*.stories.*', '**/StoreDecorator.tsx'],
             },
         ],
     },
