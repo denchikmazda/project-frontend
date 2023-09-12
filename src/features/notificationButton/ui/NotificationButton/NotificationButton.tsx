@@ -4,9 +4,9 @@ import NotificationIcon from '@/shared/assets/icons/notification-20-20.svg';
 import { classNames } from '@/shared/lib/classNames/classNames';
 // import { BrowserView, MobileView } from 'react-device-detect';
 import { useDevice } from '@/shared/lib/hooks/useDevice/useDevice';
-import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
-import { Drawer } from '@/shared/ui/Drawer/Drawer';
-import { Icon } from '@/shared/ui/Icon/Icon';
+import { Button, ButtonTheme } from '@/shared/ui/Button';
+import { Drawer } from '@/shared/ui/Drawer';
+import { Icon } from '@/shared/ui/Icon';
 import { Popover } from '@/shared/ui/popups';
 import cls from './NotificationButton.module.scss';
 
