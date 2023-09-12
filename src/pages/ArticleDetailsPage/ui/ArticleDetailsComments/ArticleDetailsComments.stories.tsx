@@ -1,7 +1,9 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Suspense } from 'react';
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
+
 import { ArticleDetailsComments } from './ArticleDetailsComments';
+
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 
 export default {
     title: 'pages/ArticleDetailsPage/ArticleDetailsComments',

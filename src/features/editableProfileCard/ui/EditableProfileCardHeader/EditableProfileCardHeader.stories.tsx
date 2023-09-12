@@ -1,6 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
+
 import { EditableProfileCardHeader } from './EditableProfileCardHeader';
+
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 
 export default {
     title: 'features/editableProficeCard/EditableProfileCardHeader',

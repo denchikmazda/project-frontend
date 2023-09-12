@@ -28,6 +28,7 @@ module.exports = {
         'i18next',
         'react-hooks',
         'denchik-fsd',
+        'unused-imports',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -79,6 +80,29 @@ module.exports = {
         'no-undef': 'off',
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
+        'unused-imports/no-unused-imports': 'error',
+        'import/order': [
+            'error',
+            {
+                pathGroups: [
+                    {
+                        pattern: '@/**',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                    {
+                        pattern: './**.module.*',
+                        group: 'internal',
+                        position: 'after',
+                    },
+                ],
+                'newlines-between': 'always',
+                alphabetize: {
+                    order: 'asc',
+                    caseInsensitive: false,
+                },
+            },
+        ],
         'denchik-fsd/path-checker': ['error', { alias: '@' }],
         'denchik-fsd/layer-imports': [
             'error',
