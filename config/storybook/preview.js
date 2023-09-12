@@ -34,11 +34,13 @@ export const parameters = {
             date: /Date$/,
         },
     },
+    layout: 'fullscreen',
     themes: {
         default: 'light',
         list: [
-            { name: 'light', class: ['app', 'light'], color: '#FFF' },
-            { name: 'dark', class: ['app', 'dark'], color: '#2d3748' },
+            { name: 'light', class: ['app', Theme.LIGHT], color: '#FFF' },
+            { name: 'dark', class: ['app', Theme.DARK], color: '#000000' },
+            { name: 'orange', class: ['app', Theme.ORANGE], color: 'ffb005' },
         ],
     },
     i18n,
