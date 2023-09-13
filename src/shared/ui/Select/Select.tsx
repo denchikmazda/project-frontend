@@ -19,13 +19,6 @@ interface SelectProps<T extends string> {
 }
 
 const typedMemo: <T>(c: T) => T = memo;
-// const typedMemo: <Component extends React.FC<any>>(
-//     component: Component,
-//     compare?: (
-//     prevProps: React.ComponentPropsWithoutRef<Component>,
-//     newProps: React.ComponentPropsWithoutRef<Component>
-//     ) => boolean
-//     ) => Component = memo;
 
 export const Select = typedMemo(<T extends string>(props: SelectProps<T>) => {
     const {
