@@ -11,15 +11,6 @@ export default {
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-    decorators: [
-        StoreDecorator({
-            user: {
-                authData: {
-                    id: '1',
-                },
-            },
-        }),
-    ],
 } as ComponentMeta<typeof ArticleRating>;
 
 const Template: ComponentStory<typeof ArticleRating> = (args) => (
@@ -44,9 +35,7 @@ Normal.parameters = {
             method: 'GET',
             status: 200,
             response: [
-                {
-                    rate: 4,
-                },
+                { rate: 4 },
             ],
         },
     ],
