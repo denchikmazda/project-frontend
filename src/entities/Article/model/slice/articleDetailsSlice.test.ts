@@ -34,10 +34,12 @@ describe('articleDetailsSlize.test', () => {
             isLoading: false,
             error: '',
         };
-        expect(articleDetailsReducer(
-            state as ArticleDetailsSchema,
-            fetchArticleById.fulfilled(data, '', ''),
-        )).toEqual({
+        expect(
+            articleDetailsReducer(
+                state as ArticleDetailsSchema,
+                fetchArticleById.fulfilled(data, '', ''),
+            ),
+        ).toEqual({
             isLoading: false,
             error: '',
             data,
@@ -50,10 +52,12 @@ describe('articleDetailsSlize.test', () => {
             isLoading: false,
             error: '',
         };
-        expect(articleDetailsReducer(
-            state as ArticleDetailsSchema,
-            fetchArticleById.pending,
-        )).toEqual({
+        expect(
+            articleDetailsReducer(
+                state as ArticleDetailsSchema,
+                fetchArticleById.pending,
+            ),
+        ).toEqual({
             isLoading: true,
             error: undefined,
             data: {},

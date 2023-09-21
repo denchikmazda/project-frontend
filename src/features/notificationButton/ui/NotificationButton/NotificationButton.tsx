@@ -35,24 +35,22 @@ export const NotificationButton = memo((props: NotificationButtonProps) => {
         </Button>
     );
 
-    return !isMobile
-        ? (
-            <Popover
-                className={classNames(cls.NotificationButton, {}, [className])}
-                direction="bottom left"
-                trigger={trigger}
-            >
-                <NotificationList className={cls.notifications} />
-            </Popover>
-        )
-        : (
-            <>
-                {trigger}
-                <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
-                    <NotificationList />
-                </Drawer>
-            </>
-        );
+    return !isMobile ? (
+        <Popover
+            className={classNames(cls.NotificationButton, {}, [className])}
+            direction="bottom left"
+            trigger={trigger}
+        >
+            <NotificationList className={cls.notifications} />
+        </Popover>
+    ) : (
+        <>
+            {trigger}
+            <Drawer isOpen={isOpen} onClose={onCloseDrawer}>
+                <NotificationList />
+            </Drawer>
+        </>
+    );
     // решение с использование библиотеки device detect
     // return (
     //     <div>

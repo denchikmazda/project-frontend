@@ -7,7 +7,7 @@ interface UseHoverBind {
 
 type UseHoverResult = [boolean, UseHoverBind];
 
-export const useHover = ():UseHoverResult => {
+export const useHover = (): UseHoverResult => {
     const [isHover, setIsHover] = useState(false);
 
     const onMouseEnter = useCallback(() => {
@@ -18,11 +18,14 @@ export const useHover = ():UseHoverResult => {
         setIsHover(false);
     }, []);
 
-    return useMemo(() => [
-        isHover,
-        {
-            onMouseEnter,
-            onMouseLeave,
-        },
-    ], [isHover, onMouseEnter, onMouseLeave]);
+    return useMemo(
+        () => [
+            isHover,
+            {
+                onMouseEnter,
+                onMouseLeave,
+            },
+        ],
+        [isHover, onMouseEnter, onMouseLeave],
+    );
 };

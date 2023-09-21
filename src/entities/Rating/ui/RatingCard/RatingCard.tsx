@@ -37,14 +37,17 @@ export const RatingCard = memo((props: RatingCardProps) => {
     const [feedback, setFeedback] = useState('');
     const isMobile = useDevice();
 
-    const onSelectStars = useCallback((selectedStarsCount: number) => {
-        setStarsCount(selectedStarsCount);
-        if (hasFeedback) {
-            setIsModalOpen(true);
-        } else {
-            onAccept?.(selectedStarsCount);
-        }
-    }, [hasFeedback, onAccept]);
+    const onSelectStars = useCallback(
+        (selectedStarsCount: number) => {
+            setStarsCount(selectedStarsCount);
+            if (hasFeedback) {
+                setIsModalOpen(true);
+            } else {
+                onAccept?.(selectedStarsCount);
+            }
+        },
+        [hasFeedback, onAccept],
+    );
 
     const acceptHandle = useCallback(() => {
         setIsModalOpen(false);
@@ -72,38 +75,47 @@ export const RatingCard = memo((props: RatingCardProps) => {
         <Card className={className} max data-testid="RatingCard">
             <VStack align="center" gap="8" max>
                 <Text title={starsCount ? t('Spasibo za ocenku') : title} />
-                <StarRating selectedStars={starsCount} size={40} onSelect={onSelectStars} />
+                <StarRating
+                    selectedStars={starsCount}
+                    size={40}
+                    onSelect={onSelectStars}
+                />
             </VStack>
-            {isMobile
-                ? (
-                    <Drawer isOpen={isModalOpen} lazy>
-                        <VStack gap="32">
-                            {modalContent}
-                            <Button fullWidth onClick={acceptHandle} size={ButtonSize.L}>
+            {isMobile ? (
+                <Drawer isOpen={isModalOpen} lazy>
+                    <VStack gap="32">
+                        {modalContent}
+                        <Button
+                            fullWidth
+                            onClick={acceptHandle}
+                            size={ButtonSize.L}
+                        >
+                            {t('otpravit')}
+                        </Button>
+                    </VStack>
+                </Drawer>
+            ) : (
+                <Modal isOpen={isModalOpen} lazy onClose={cancelHandle}>
+                    <VStack max gap="32">
+                        {modalContent}
+                        <HStack max gap="16" justify="end">
+                            <Button
+                                onClick={cancelHandle}
+                                theme={ButtonTheme.OUTLINE_RED}
+                                data-testid="RatingCard.Cancel"
+                            >
+                                {t('zakrit')}
+                            </Button>
+                            <Button
+                                onClick={acceptHandle}
+                                data-testid="RatingCard.Send"
+                            >
                                 {t('otpravit')}
                             </Button>
-                        </VStack>
-                    </Drawer>
-                )
-                : (
-                    <Modal isOpen={isModalOpen} lazy onClose={cancelHandle}>
-                        <VStack max gap="32">
-                            {modalContent}
-                            <HStack max gap="16" justify="end">
-                                <Button
-                                    onClick={cancelHandle}
-                                    theme={ButtonTheme.OUTLINE_RED}
-                                    data-testid="RatingCard.Cancel"
-                                >
-                                    {t('zakrit')}
-                                </Button>
-                                <Button onClick={acceptHandle} data-testid="RatingCard.Send">
-                                    {t('otpravit')}
-                                </Button>
-                            </HStack>
-                        </VStack>
-                    </Modal>
-                )}
+                        </HStack>
+                    </VStack>
+                </Modal>
+            )}
         </Card>
     );
 });

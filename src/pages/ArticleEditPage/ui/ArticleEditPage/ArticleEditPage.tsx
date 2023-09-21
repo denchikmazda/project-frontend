@@ -14,14 +14,12 @@ interface ArticleEditPageProps {
 const ArticleEditPage = memo((props: ArticleEditPageProps) => {
     const { className } = props;
     const { t } = useTranslation();
-    const { id } = useParams<{id: string}>();
+    const { id } = useParams<{ id: string }>();
     const isEdit = Boolean(id);
 
     return (
         <Page className={classNames(cls.ArticleEditPage, {}, [className])}>
-            {isEdit
-                ? t('ARTICLE EDIT PAGE') + id
-                : t('Sozdanie novoi statyi')}
+            {isEdit ? t('ARTICLE EDIT PAGE') + id : t('Sozdanie novoi statyi')}
         </Page>
     );
 });

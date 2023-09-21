@@ -1,41 +1,41 @@
 {
-  "compilerOptions": {
-    "outDir": "./dist/",
-    // подсвечивает все места где не указан тип
-    "noImplicitAny": true,
-    "module": "ESNext",
-    // в какую спецификацию будет компилироваться
-    "target": "es5",
-    "jsx": "react-jsx",
-    // Компилятор будет обрабатывать ts и js файлы
-    "allowJs": true,
-    "strict": true,
-    "moduleResolution": "node",
-    // для абсолютного импорта
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    // esModuleInterop позволяет работать с пакетами, которые используют common js
-    // как с обычными пакетами с помощью import (require() module.export) = common js
-    "esModuleInterop": true,
-    // если какая-то библиотека не имеет default import
-    // лоадеры ts-loader or babel-loader автоматически создают их
-    // Пример: вместо такого импорта:
-    // import * as React from 'react'
-    // можно писть так:
-    // import React from 'react'
-    "allowSyntheticDefaultImports": true,
-    "isolatedModules": true
-  },
-  "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS"
-    }
-  },
-  "include": [
-    "./config/jest/setupTests.ts",
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
-  ],
+        "outDir": "./dist/",
+        // подсвечивает все места где не указан тип
+        "noImplicitAny": true,
+        "module": "ESNext",
+        // в какую спецификацию будет компилироваться
+        "target": "es5",
+        "jsx": "react-jsx",
+        // Компилятор будет обрабатывать ts и js файлы
+        "allowJs": true,
+        "strict": true,
+        "moduleResolution": "node",
+        // для абсолютного импорта
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        // esModuleInterop позволяет работать с пакетами, которые используют common js
+        // как с обычными пакетами с помощью import (require() module.export) = common js
+        "esModuleInterop": true,
+        // если какая-то библиотека не имеет default import
+        // лоадеры ts-loader or babel-loader автоматически создают их
+        // Пример: вместо такого импорта:
+        // import * as React from 'react'
+        // можно писть так:
+        // import React from 'react'
+        "allowSyntheticDefaultImports": true,
+        "isolatedModules": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    },
+    "include": [
+        "./config/jest/setupTests.ts",
+        "./src/**/*.ts",
+        "./src/**/*.tsx"
+    ]
 }

@@ -3,7 +3,11 @@ import { act, screen } from '@testing-library/react';
 import AppRouter from './AppRouter';
 
 import { UserRole } from '@/entities/User';
-import { getRouteAbout, getRouteAdmin, getRouteProfile } from '@/shared/const/router';
+import {
+    getRouteAbout,
+    getRouteAdmin,
+    getRouteProfile,
+} from '@/shared/const/router';
 import { componentRender } from '@/shared/lib/tests/componentRender/componentRender';
 
 describe('app/router/AppRouter', () => {
@@ -62,7 +66,10 @@ describe('app/router/AppRouter', () => {
             componentRender(<AppRouter />, {
                 route: getRouteAdmin(),
                 initialState: {
-                    user: { _inited: true, authData: { roles: [UserRole.ADMIN] } },
+                    user: {
+                        _inited: true,
+                        authData: { roles: [UserRole.ADMIN] },
+                    },
                 },
             });
         });
