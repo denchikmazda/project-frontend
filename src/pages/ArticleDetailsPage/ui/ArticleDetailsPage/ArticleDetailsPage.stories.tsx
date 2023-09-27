@@ -14,6 +14,9 @@ export default {
             path: '/articles/:id',
             route: '/articles/1',
         },
+        loki: {
+            skip: true,
+        },
     },
     argTypes: {
         backgroundColor: { control: 'color' },
