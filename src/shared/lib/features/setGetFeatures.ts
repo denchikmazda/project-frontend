@@ -8,7 +8,7 @@ export function setFeatureFlags(newFeatureFlags?: FeatureFlags) {
         featureFlags = newFeatureFlags;
     }
 }
-
-export function getFeatureFlags(flag: keyof FeatureFlags) {
-    return featureFlags[flag];
+// TODO featuresFlags is undefined
+export function getFeatureFlag(flag: keyof FeatureFlags) {
+    return featureFlags?.[flag];
 }
