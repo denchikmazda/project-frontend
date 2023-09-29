@@ -19,12 +19,15 @@
 // addDecorator(ThemeDecorator(Theme.LIGHT));
 
 import { addDecorator } from '@storybook/react';
-import { Theme } from '@/shared/const/theme';
-import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator';
-import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator';
+
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator';
+import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator';
 import { SuspenseDecorator } from '../../src/shared/config/storybook/SuspenseDecorator';
+import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator';
+
 import i18n from './i18n';
+
+import { Theme } from '@/shared/const/theme';
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
