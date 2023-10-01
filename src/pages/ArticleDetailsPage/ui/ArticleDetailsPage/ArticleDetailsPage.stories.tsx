@@ -4,6 +4,7 @@ import React from 'react';
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 import { Article, ArticleBlockType, ArticleType } from '@/entities/Article';
+import { FeaturesFlagsDecorator } from '@/shared/config/storybook/FeaturesFlagsDecorator';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator';
 
 export default {
@@ -71,4 +72,5 @@ Normal.decorators = [
             data: article,
         },
     }),
+    FeaturesFlagsDecorator({ isArticleRatingEnabled: true }),
 ];

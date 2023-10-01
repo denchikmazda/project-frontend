@@ -27,6 +27,7 @@ import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator
 
 import i18n from './i18n';
 
+import { FeaturesFlagsDecorator } from '@/shared/config/storybook/FeaturesFlagsDecorator';
 import { Theme } from '@/shared/const/theme';
 
 export const parameters = {
@@ -58,3 +59,4 @@ addDecorator(StyleDecorator);
 addDecorator(RouterDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
 addDecorator(SuspenseDecorator);
+addDecorator(FeaturesFlagsDecorator({}));
