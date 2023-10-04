@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Currency } from '../../model/types/currency';
 
-import { ListBox } from '@/shared/ui/deprecated/Popups';
+import { ListBox } from '@/shared/ui/deprecated/Popus';
 
 interface CurrencySelectProps {
     className?: string;
