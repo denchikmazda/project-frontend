@@ -10,11 +10,11 @@
     "Sortirovat po": "Sort by:",
     "Poisk": "Search",
     "po": "by",
-    "vozrastaniyu": "ascending",
-    "ubivaniyu": "descending ",
-    "date sozdaniya": "date of creation",
-    "nazvaniyu": "name",
-    "prosmotram": "views",
+    "vozrastaniyu": "Ascending",
+    "ubivaniyu": "Descending ",
+    "date sozdaniya": "Date of creation",
+    "nazvaniyu": "Name",
+    "prosmotram": "Views",
     "IT": "IT",
     "All": "All articles",
     "Economica": "Economy",
@@ -29,4 +29,3 @@
     "Welcome to the articles page": "Welcome to the articles page",
     "Search and read articles": "Here you can search and view articles on various topics"
 }
-

@@ -10,11 +10,11 @@
     "Sortirovat po": "Сортировать по:",
     "Poisk": "Поиск",
     "po": "по",
-    "vozrastaniyu": "возрастанию",
-    "ubivaniyu": "убыванию",
-    "date sozdaniya": "дате создания",
-    "nazvaniyu": "названию",
-    "prosmotram": "просмотрам",
+    "vozrastaniyu": "Возрастанию",
+    "ubivaniyu": "Убыванию",
+    "date sozdaniya": "Дата загрузки",
+    "nazvaniyu": "Названию",
+    "prosmotram": "Просмотрам",
     "IT": "Айти",
     "All": "Все статьи",
     "Economica": "Экономика",
@@ -29,4 +29,3 @@
     "Welcome to the articles page": "Добро пожаловать на страницу статей",
     "Search and read articles": "Здесь вы можете искать и просматривать статьи на различные темы"
 }
-
