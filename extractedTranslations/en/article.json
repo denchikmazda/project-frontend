@@ -26,6 +26,10 @@
   "nazvaniyu": "",
   "po": "",
   "prosmotram": "",
+  "prosmotrov": "",
+  "prosmotrov_plural": "",
   "ubivaniyu": "",
-  "vozrastaniyu": ""
+  "vozrastaniyu": "",
+  "{{count}} prosmotrov": "",
+  "{{count}} prosmotrov_plural": ""
 }

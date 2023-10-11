@@ -24,7 +24,7 @@ export const ProfileCardDeprecatedError = () => {
         <HStack
             justify="center"
             max
-            className={classNames(cls.ProfileCard, {}, [cls.error])}
+            className={classNames(cls.ProfileCardDeprecated, {}, [cls.error])}
         >
             <TextDeprecated
                 theme={TextTheme.ERROR}
@@ -41,7 +41,9 @@ export const ProfileCardDeprecatedLoader = () => {
         <HStack
             justify="center"
             max
-            className={classNames(cls.ProfileCard, { [cls.loading]: true })}
+            className={classNames(cls.ProfileCardDeprecated, {
+                [cls.loading]: true,
+            })}
         >
             <Loader />
         </HStack>
@@ -72,7 +74,7 @@ export const ProfileCardDeprecated = memo((props: ProfileCardProps) => {
         <VStack
             gap="8"
             max
-            className={classNames(cls.ProfileCard, mods, [className])}
+            className={classNames(cls.ProfileCardDeprecated, mods, [className])}
         >
             {data?.avatar && (
                 <HStack justify="center" max className={cls.avatarWrapper}>

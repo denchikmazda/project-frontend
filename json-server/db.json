@@ -618,7 +618,7 @@
       },
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
       "jsonSettings": {
-        "isArticlesPageWasOpened": true,
+        "isArticlesPageWasOpened": false,
         "theme": "app_dark_theme"
       }
     },

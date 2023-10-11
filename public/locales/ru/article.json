@@ -27,5 +27,9 @@
     "Ostavte otzyv": "Оставьте свой отзыв о статье, это поможет улучшить качество",
     "Ocenka statej skoro poyavitsya": "Оценка статей скоро появится",
     "Welcome to the articles page": "Добро пожаловать на страницу статей",
-    "Search and read articles": "Здесь вы можете искать и просматривать статьи на различные темы"
+    "Search and read articles": "Здесь вы можете искать и просматривать статьи на различные темы",
+    "prosmotrov_zero": "{{count}} просмотров",
+    "prosmotrov_one": "{{count}} просмотр",
+    "prosmotrov_few": "{{count}} просмотра",
+    "prosmotrov_many": "{{count}} просмотров"
 }

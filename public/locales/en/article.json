@@ -27,5 +27,7 @@
     "Ostavte otzyv": "Leave your feedback about the article, it will help to improve the quality",
     "Ocenka statej skoro poyavitsya": "Rating articles coming soon",
     "Welcome to the articles page": "Welcome to the articles page",
-    "Search and read articles": "Here you can search and view articles on various topics"
+    "Search and read articles": "Here you can search and view articles on various topics",
+    "prosmotrov_one": "{{count}} view",
+    "prosmotrov_other": "{{count}} views"
 }
