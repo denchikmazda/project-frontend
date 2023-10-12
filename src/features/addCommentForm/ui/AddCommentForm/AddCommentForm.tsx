@@ -16,9 +16,16 @@ import {
     DynamicModuleLoader,
     ReducersList,
 } from '@/shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
+import { ToggleFeatures } from '@/shared/lib/features';
 import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Button, ButtonTheme } from '@/shared/ui/deprecated/Button';
-import { Input } from '@/shared/ui/deprecated/Input';
+import {
+    Button as ButtonDeprecated,
+    ButtonTheme,
+} from '@/shared/ui/deprecated/Button';
+import { Input as InputDeprecated } from '@/shared/ui/deprecated/Input';
+import { Button } from '@/shared/ui/redesigned/Button';
+import { Card } from '@/shared/ui/redesigned/Card';
+import { Input } from '@/shared/ui/redesigned/Input';
 import { HStack } from '@/shared/ui/redesigned/Stack';
 
 import cls from './AddCommentForm.module.scss';
@@ -52,27 +59,63 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
     }, [onCommentTextChange, onSendComment, text]);
     return (
         <DynamicModuleLoader reducers={reducers}>
-            <HStack
-                data-testid="AddCommentForm"
-                justify="between"
-                max
-                className={classNames(cls.AddCommentForm, {}, [className])}
-            >
-                <Input
-                    className={cls.input}
-                    placeholder={t('Vvedite tekst kommentariya')}
-                    value={text}
-                    data-testid="AddCommentForm.Input"
-                    onChange={onCommentTextChange}
-                />
-                <Button
-                    theme={ButtonTheme.OUTLINE}
-                    data-testid="AddCommentForm.Button"
-                    onClick={onSendHandler}
-                >
-                    {t('Otpravit')}
-                </Button>
-            </HStack>
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <Card max padding="24" border="round">
+                        <HStack
+                            data-testid="AddCommentForm"
+                            justify="between"
+                            max
+                            gap="16"
+                            className={classNames(
+                                cls.AddCommentFormRedesigned,
+                                {},
+                                [className],
+                            )}
+                        >
+                            <Input
+                                className={cls.input}
+                                placeholder={t('Vvedite tekst kommentariya')}
+                                value={text}
+                                data-testid="AddCommentForm.Input"
+                                onChange={onCommentTextChange}
+                            />
+                            <Button
+                                data-testid="AddCommentForm.Button"
+                                onClick={onSendHandler}
+                            >
+                                {t('Otpravit')}
+                            </Button>
+                        </HStack>
+                    </Card>
+                }
+                off={
+                    <HStack
+                        data-testid="AddCommentForm"
+                        justify="between"
+                        max
+                        className={classNames(cls.AddCommentForm, {}, [
+                            className,
+                        ])}
+                    >
+                        <InputDeprecated
+                            className={cls.input}
+                            placeholder={t('Vvedite tekst kommentariya')}
+                            value={text}
+                            data-testid="AddCommentForm.Input"
+                            onChange={onCommentTextChange}
+                        />
+                        <ButtonDeprecated
+                            theme={ButtonTheme.OUTLINE}
+                            data-testid="AddCommentForm.Button"
+                            onClick={onSendHandler}
+                        >
+                            {t('Otpravit')}
+                        </ButtonDeprecated>
+                    </HStack>
+                }
+            />
         </DynamicModuleLoader>
     );
 });
