@@ -29,6 +29,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
 
     useEffect(() => {
         document.body.className = theme;
+        localStorage.setItem(LOCAL_STORAGE_THEME_KEY, theme);
     }, [theme]);
 
     const defaultProps = useMemo(
