@@ -9,7 +9,9 @@ import {
 
 import { RatingCard } from '@/entities/Rating';
 import { getUserAuthData } from '@/entities/User';
-import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
+import { toggleFeatures } from '@/shared/lib/features';
+import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
+import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
 
 export interface ArticleRatingProps {
     className?: string;
@@ -20,6 +22,12 @@ const ArticleRating = memo((props: ArticleRatingProps) => {
     const { className, articleId } = props;
     const { t } = useTranslation('article');
     const userData = useSelector(getUserAuthData);
+
+    const Skeleton = toggleFeatures({
+        name: 'isAppRedesigned',
+        on: () => SkeletonRedesigned,
+        off: () => SkeletonDeprecated,
+    });
 
     const { data, isLoading } = useGetArticleRating({
         articleId,

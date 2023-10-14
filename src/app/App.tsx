@@ -1,6 +1,7 @@
 import React, { memo, Suspense, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
+import { useAppToolbar } from './lib/useAppToolbar';
 import { withTheme } from './providers/ThemeProvider/ui/withTheme';
 import { AppRouter } from './providers/router';
 
@@ -19,6 +20,7 @@ const App = memo(() => {
     const { theme } = useTheme();
     const dispatch = useAppDispatch();
     const inited = useSelector(getUserInited);
+    const toolbar = useAppToolbar();
 
     useEffect(() => {
         if (!inited) {
@@ -67,6 +69,7 @@ const App = memo(() => {
                             header={<Navbar />}
                             content={<AppRouter />}
                             sidebar={<Sidebar />}
+                            toolbar={toolbar}
                         />
                     </Suspense>
                 </div>

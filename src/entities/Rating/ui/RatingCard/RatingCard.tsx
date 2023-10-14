@@ -193,8 +193,6 @@ export const RatingCard = memo((props: RatingCardProps) => {
         </>
     );
 
-    const cardProps = {};
-
     return (
         <ToggleFeatures
             feature="isAppRedesigned"
