@@ -177,7 +177,7 @@ Clear.args = {
 
 ### Работа с feature-flags
 
-Разрешено использование feature flags только с помощью хэлпера toggleFeatures
+Разрешено использование feature flags только с помощью хэлпера toggleFeatures для работы с функциями или ToggleFeatures для работы с компонентами
 
 В него передаётся объект с опциями
 
