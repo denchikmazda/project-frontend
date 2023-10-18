@@ -8,8 +8,6 @@ import { useAppDispatch } from '@/shared/lib/hooks/useAppDispatch/useAppDispatch
 import { useForceUpdate } from '@/shared/lib/render/forceUpdate';
 import { ListBox } from '@/shared/ui/redesigned/Popups';
 import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
-import { HStack } from '@/shared/ui/redesigned/Stack';
-import { Text } from '@/shared/ui/redesigned/Text';
 
 interface UiDesignSwitcherProps {
     className?: string;
@@ -51,19 +49,15 @@ export const UiDesignSwitcher = memo((props: UiDesignSwitcherProps) => {
         }
     };
 
-    return (
-        <HStack>
-            <Text text={t('Variant interface')} />
-            {isLoading ? (
-                <Skeleton width={100} height={40} />
-            ) : (
-                <ListBox
-                    onChange={onChange}
-                    items={items}
-                    value={isAppRedesigned ? 'new' : 'old'}
-                    className={className}
-                />
-            )}
-        </HStack>
+    return isLoading ? (
+        <Skeleton width={100} height={40} />
+    ) : (
+        <ListBox
+            label={t('Variant interface')}
+            onChange={onChange}
+            items={items}
+            value={isAppRedesigned ? 'new' : 'old'}
+            className={className}
+        />
     );
 });

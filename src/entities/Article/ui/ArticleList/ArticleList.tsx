@@ -73,7 +73,6 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     wrap="wrap"
                     gap="16"
                     className={classNames(cls.ArticleListRedesigned, {}, [])}
-                    data-testid="ArticleList"
                 >
                     {articles.length > 0 ? articles.map(renderArticle) : null}
                     {isLoading && getSkeletons(view)}
