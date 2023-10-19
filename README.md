@@ -1,3 +1,18 @@
+## demo-version (back4app + netlify)
+
+[https://chipper-basbousa-54b368.netlify.app](https://chipper-basbousa-54b368.netlify.app)
+
+**Test user:**
+
+`login:` admin<br />
+`password:` 123
+
+На странице [Настройки](https://chipper-basbousa-54b368.netlify.app/settings) можно переключиться на другой дизайн (deprecated)
+
+<img src='src/shared/assets/icons/site.png'>
+
+---
+
 ## Запуск проекта
 
 ```
@@ -46,6 +61,8 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 
 В проекте используется библиотека i18next для работы с переводами.
 Файлы с переводами хранятся в public/locales.
+
+Поддерживаются плюральные формы.
 
 Для комфортной работы рекомендуем установить плагин для webstorm/vscode
 
